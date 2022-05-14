@@ -126,9 +126,24 @@ li {
   flex: 1 1 auto;
   // .page__main
   &__main {
-
   }
 }
+
+/*-------------------------------------------------------*/
+
+.title {
+  font-family: 'Cal Sans', sans-serif;
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #121212;
+}
+
+.title span {
+  color: #FF6428;
+}
+
+/*-------------------------------------------------------*/
 
 .main {
   padding: 0 0 80px 0;
@@ -153,9 +168,7 @@ li {
 
   // .main__title
   &__title {
-    font-family: 'Cal Sans', sans-serif;
     font-size: 56px;
-    line-height: 1.2;
     @media (max-width: 767.98px) {
       font-size: 54px;
     }
@@ -198,10 +211,6 @@ li {
       display: none;
     }
   }
-}
-
-.title span {
-  color: #FF6428;
 }
 
 .actions-main {

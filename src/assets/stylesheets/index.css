@@ -114,6 +114,20 @@ li {
 .page {
   flex: 1 1 auto;
 }
+/*-------------------------------------------------------*/
+.title {
+  font-family: "Cal Sans", sans-serif;
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #121212;
+}
+
+.title span {
+  color: #FF6428;
+}
+
+/*-------------------------------------------------------*/
 .main {
   padding: 0 0 80px 0;
 }
@@ -137,9 +151,7 @@ li {
   }
 }
 .main__title {
-  font-family: "Cal Sans", sans-serif;
   font-size: 56px;
-  line-height: 1.2;
 }
 @media (max-width: 767.98px) {
   .main__title {
@@ -183,10 +195,6 @@ li {
   .main__decor {
     display: none;
   }
-}
-
-.title span {
-  color: #FF6428;
 }
 
 .actions-main__button {
