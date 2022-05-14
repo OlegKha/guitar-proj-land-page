@@ -213,10 +213,14 @@ li {
     font-weight: 600;
     line-height: 1.5;
     color: #FFFFFF;
+    transition: all 0.3s ease 0s;
     @media (max-width: 479.98px) {
       font-size: 12px;
       padding: 18px 30px;
     }
+  }
+  &__button:hover {
+    background-color: #de5c2a;
   }
   &__button:not(:last-child) {
     margin: 0 40px 0 0;
@@ -233,9 +237,18 @@ li {
 .decor-main {
   position: relative;
   margin: 0 -125px 0 0;
+  padding: 0 0 97.6% 0;
   // .decor-main__img
   &__img {
     max-width: 672px;
+    border-radius: 0 0 160px 375px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
     }
   &__img img {
     @media (max-width: 1092px) {
