@@ -72,6 +72,12 @@ li {
     gap: 10px;
   }
 }
+@media (max-width: 479.98px) {
+  .header__logo {
+    width: 40px;
+    overflow: hidden;
+  }
+}
 .menu {
   padding: 5px;
   background: rgba(255, 255, 255, 0.5);
@@ -89,6 +95,11 @@ li {
 @media (max-width: 767.98px) {
   .menu__list {
     gap: 10px;
+  }
+}
+@media (max-width: 479.98px) {
+  .menu__list {
+    gap: 20px;
   }
 }
 .menu__link {
@@ -128,11 +139,21 @@ li {
 .main__title {
   font-family: "Cal Sans", sans-serif;
   font-size: 56px;
-  line-height: 67px;
+  line-height: 1.2;
 }
 @media (max-width: 767.98px) {
   .main__title {
-    font-size: 50px;
+    font-size: 54px;
+  }
+}
+@media (max-width: 533px) {
+  .main__title {
+    font-size: 48px;
+  }
+}
+@media (max-width: 497px) {
+  .main__title {
+    font-size: 45px;
   }
 }
 .main__title:not(:last-child) {
@@ -141,7 +162,7 @@ li {
 .main__text {
   max-width: 399px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5;
 }
 .main__text:not(:last-child) {
   margin: 0 0 33px 0;
@@ -173,8 +194,14 @@ li {
   background-color: #FF6428;
   border-radius: 40px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 1.5;
   color: #FFFFFF;
+}
+@media (max-width: 479.98px) {
+  .actions-main__button {
+    font-size: 12px;
+    padding: 18px 30px;
+  }
 }
 .actions-main__button:not(:last-child) {
   margin: 0 40px 0 0;

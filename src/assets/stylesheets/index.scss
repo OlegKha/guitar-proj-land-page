@@ -76,6 +76,10 @@ li {
 
   // .header__logo
   &__logo {
+    @media (max-width: 479.98px) {
+      width: 40px;
+      overflow: hidden;
+    }
   }
 
   // .header__menu
@@ -96,6 +100,9 @@ li {
     }
     @media (max-width: 767.98px) {
       gap: 10px;
+    }
+    @media (max-width: 479.98px) {
+      gap: 20px;
     }
   }
 
@@ -148,9 +155,15 @@ li {
   &__title {
     font-family: 'Cal Sans', sans-serif;
     font-size: 56px;
-    line-height: 67px;
+    line-height: 1.2;
     @media (max-width: 767.98px) {
-      font-size: 50px;
+      font-size: 54px;
+    }
+    @media (max-width: 533px) {
+      font-size: 48px;
+    }
+    @media (max-width: 497px) {
+      font-size: 45px;
     }
   }
   &__title:not(:last-child) {
@@ -162,7 +175,7 @@ li {
   &__text {
     max-width: 399px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
   }
 
   &__text:not(:last-child) {
@@ -198,8 +211,12 @@ li {
     background-color: #FF6428;
     border-radius: 40px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 1.5;
     color: #FFFFFF;
+    @media (max-width: 479.98px) {
+      font-size: 12px;
+      padding: 18px 30px;
+    }
   }
   &__button:not(:last-child) {
     margin: 0 40px 0 0;
