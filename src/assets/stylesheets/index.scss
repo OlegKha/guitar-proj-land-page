@@ -317,6 +317,9 @@ li {
     align-items: center;
     gap: 15px;
     margin: 0 0 32px 0;
+    @media (max-width: 560px) {
+      justify-content: space-around;
+    }
   }
 
   // .body-store__title
@@ -347,6 +350,7 @@ li {
     }
     @media (max-width: 560px) {
       grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
     }
   }
 

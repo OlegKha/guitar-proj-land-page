@@ -269,6 +269,11 @@ li {
   gap: 15px;
   margin: 0 0 32px 0;
 }
+@media (max-width: 560px) {
+  .body-store__header {
+    justify-content: space-around;
+  }
+}
 .body-store__title {
   font-weight: 600;
   font-size: 20px;
@@ -296,6 +301,7 @@ li {
 @media (max-width: 560px) {
   .body-store__items {
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
 }
 .item__img {
