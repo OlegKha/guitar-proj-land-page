@@ -319,6 +319,51 @@ li {
   line-height: 1.5;
 }
 
+/*Categories section*/
+.page__categories {
+  margin: 0 0 220px 0;
+}
+
+.categories__title {
+  text-align: center;
+}
+.categories__title:not(:last-child) {
+  margin: 0 0 80px 0;
+}
+.categories__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 69px;
+}
+.categories__item {
+  position: relative;
+}
+
+.item-categories {
+  position: relative;
+  padding: 0 0 127% 0;
+}
+.item-categories__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.item-categories__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 30px 20px;
+  color: #FFFFFF;
+  width: 100%;
+}
+
 /*Footer section*/
 
 /*# sourceMappingURL=index.css.map */
