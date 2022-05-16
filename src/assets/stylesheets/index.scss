@@ -499,11 +499,14 @@ li {
     // .brands__items
   &__items {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 117px 160px;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+    gap: 117px 20px;
+    align-items: center;
   }
   // .brands__item
   &__item {
+    width: 100%;
   }
 }
 

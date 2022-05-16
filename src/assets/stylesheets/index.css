@@ -401,9 +401,15 @@ li {
 }
 .brands__items {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 117px 160px;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-between;
+  gap: 117px 20px;
+  align-items: center;
 }
+.brands__item {
+  width: 100%;
+}
+
 /*Footer section*/
 
 /*# sourceMappingURL=index.css.map */
