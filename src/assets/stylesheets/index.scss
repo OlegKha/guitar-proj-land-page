@@ -423,9 +423,11 @@ li {
     gap: 69px;
     @media (max-width: 817px) {
       grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
     }
     @media (max-width: 424px) {
       grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
     }
   }
 
@@ -439,8 +441,14 @@ li {
 .item-categories {
   position: relative;
   padding: 0 0 127% 0;
+  overflow: hidden;
+  border-radius: 25px;
   // .item-categories__link
   &__link {
+  }
+
+  &__img:hover {
+    transform: scale(1.1);
   }
 
   // .item-categories__img
@@ -451,6 +459,7 @@ li {
     top: 0;
     left: 0;
     object-fit: cover;
+    transition: all 0.3s ease 0s;
   }
 
   // .item-categories__title
@@ -465,6 +474,36 @@ li {
     padding: 30px 20px;
     color: #FFFFFF;
     width: 100%;
+  }
+}
+
+
+/*Best brands*/
+
+.page {
+  // .page__brands
+  &__brands {
+    padding: 0 0 180px 0;
+  }
+}
+
+.brands {
+  // .brands__title
+  &__title {
+    text-align: center;
+  }
+  &__title:not(:last-child) {
+    margin: 0 0 75px 0;
+  }
+
+    // .brands__items
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 117px 160px;
+  }
+  // .brands__item
+  &__item {
   }
 }
 
