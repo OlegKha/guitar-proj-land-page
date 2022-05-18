@@ -521,6 +521,82 @@ li {
 }
 
 
+/*Why try Rhytm?*/
+
+.page {
+  // .page__why
+  &__why {
+    background: #121212;
+    padding: 90px 155px;
+  }
+}
+
+.why {
+  // .why__container
+  &__container {
+  }
+
+  // .why__title
+  &__title {
+    color: #FFFFFF;
+    text-align: center;
+  }
+  &__title:not(:last-child) {
+    margin: 0 0 75px 0;
+  }
+
+  // .why__items
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+
+  }
+}
+
+.items-why {
+
+  // .items-why__item
+  &__item {
+    display: grid;
+    justify-items: center;
+  }
+
+  // .items-why__icon
+  &__icon {
+    margin: 0 0 40px 0;
+
+  }
+
+  //// .items-why__img
+  &__img {
+    padding: 20px;
+    background: #262626;
+    border-radius: 20px;
+  }
+
+  // .items-why__title
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 0 12px 0;
+  }
+
+  // .items-why__text
+  &__text {
+    max-width: 230px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: capitalize;
+    color: #666666;
+  }
+}
+
 /*Footer section*/
 
 .footer {
