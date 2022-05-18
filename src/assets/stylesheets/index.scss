@@ -528,7 +528,6 @@ li {
   // .page__why
   &__why {
     background: #121212;
-    padding: 90px 155px;
   }
 }
 
@@ -541,6 +540,7 @@ li {
   &__title {
     color: #FFFFFF;
     text-align: center;
+    padding: 93px 0 0 0;
   }
   &__title:not(:last-child) {
     margin: 0 0 75px 0;
@@ -552,6 +552,7 @@ li {
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-evenly;
     gap: 0 20px;
+    padding: 0 0 94px 0;
     @media (max-width: 991.98px) {
       grid-template-columns: repeat(2, 1fr);
       gap: 30px 20px;
