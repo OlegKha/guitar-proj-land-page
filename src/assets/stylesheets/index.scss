@@ -490,6 +490,7 @@ li {
 .brands {
   // .brands__title
   &__title {
+
     text-align: center;
   }
   &__title:not(:last-child) {
@@ -549,8 +550,16 @@ li {
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
-
+    justify-content: space-evenly;
+    gap: 0 20px;
+    @media (max-width: 991.98px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px 20px;
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(1, auto);
+      justify-items: stretch;
+    }
   }
 }
 
@@ -560,6 +569,7 @@ li {
   &__item {
     display: grid;
     justify-items: center;
+    text-align: center;
   }
 
   // .items-why__icon
@@ -584,6 +594,7 @@ li {
     text-transform: uppercase;
     color: #FFFFFF;
     margin: 0 0 12px 0;
+    text-align: center;
   }
 
   // .items-why__text

@@ -442,12 +442,26 @@ li {
 .why__items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 0 20px;
+}
+@media (max-width: 991.98px) {
+  .why__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .why__items {
+    grid-template-columns: repeat(1, auto);
+    justify-items: stretch;
+  }
 }
 
 .items-why__item {
   display: grid;
   justify-items: center;
+  text-align: center;
 }
 .items-why__icon {
   margin: 0 0 40px 0;
@@ -465,6 +479,7 @@ li {
   text-transform: uppercase;
   color: #FFFFFF;
   margin: 0 0 12px 0;
+  text-align: center;
 }
 .items-why__text {
   max-width: 230px;
