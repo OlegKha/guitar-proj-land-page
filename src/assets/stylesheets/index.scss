@@ -503,6 +503,16 @@ li {
     justify-content: space-between;
     gap: 117px 20px;
     align-items: center;
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(3, auto);
+    }
+    @media (max-width: 488px) {
+      grid-template-columns: repeat(2, auto);
+      gap: 117px 5px;
+    }
+    @media (max-width: 340px) {
+      gap: 117px 5px;
+    }
   }
   // .brands__item
   &__item {

@@ -406,6 +406,22 @@ li {
   gap: 117px 20px;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .brands__items {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+@media (max-width: 488px) {
+  .brands__items {
+    grid-template-columns: repeat(2, auto);
+    gap: 117px 5px;
+  }
+}
+@media (max-width: 340px) {
+  .brands__items {
+    gap: 117px 5px;
+  }
+}
 .brands__item {
   width: 100%;
 }
