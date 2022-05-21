@@ -561,6 +561,30 @@ li {
   text-transform: uppercase;
 }
 
+.swiper-pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background: #C4C4C4;
+  border-radius: 20px;
+  align-items: center;
+  width: 10px;
+  height: 16px;
+  padding: 0 12px 0 0;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  width: 12px;
+  height: 24px;
+  background: #FF6428;
+  border-radius: 20px;
+  transform: rotate(-90deg);
+  padding: 0 12px 0 0;
+}
+
 /*Footer section*/
 
 /*# sourceMappingURL=index.css.map */
