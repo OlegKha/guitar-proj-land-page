@@ -634,6 +634,7 @@ li {
 
   // .customers__swiper
   &__swiper {
+
   }
 }
 
@@ -649,6 +650,11 @@ li {
   &__slide {
     display: flex;
     column-gap: 146px;
+    justify-content: center;
+    @media (max-width: 1228px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   // .swiper-customers__pagination
@@ -674,6 +680,14 @@ li {
     position: relative;
     width: 320px;
     height: 320px;
+    @media (max-width: 482px) {
+      width: 270px;
+      height: 270px;
+    }
+    @media (max-width: 247px) {
+      width: 250px;
+      height: 250px;
+    }
   }
   &__image::before {
     content: "";
@@ -681,10 +695,18 @@ li {
     width: 285px;
     height: 257px;
     top: 50px;
-    left: -80px;
+    left: -49px;
     background: #FF6428;
     border-radius: 40px 0 400px 400px;
     transform: rotate(-10deg);
+    @media (max-width: 482px) {
+      width: 255px;
+      height: 220px;
+    }
+    @media (max-width: 427px) {
+      width: 235px;
+      height: 200px;
+    }
   }
 
 
