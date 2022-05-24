@@ -667,5 +667,15 @@ li {
 }
 
 /*Footer section*/
+.footer {
+  background: #EEEEEE;
+}
+.footer__body {
+  display: flex;
+  gap: 30px;
+}
+.body-footer__column {
+  flex: 0 1 33.333%;
+}
 
 /*# sourceMappingURL=index.css.map */

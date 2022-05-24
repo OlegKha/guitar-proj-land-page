@@ -860,4 +860,94 @@ li {
 /*Footer section*/
 
 .footer {
+  background: #EEEEEE;
+  // .footer__container
+  &__container {
+  }
+
+  // .footer__body
+  &__body {
+    display: flex;
+    gap: 30px;
+  }
+
+  // .footer__copy
+  &__copy {
+  }
+}
+
+.body-footer {
+  // .body-footer__column
+  &__column {
+    flex: 0 1 33.333%;
+  }
+
+  // .body-footer__logo
+  &__logo {
+  }
+
+  // .body-footer__contacts
+  &__contacts {
+  }
+
+  // .body-footer__menu
+  &__menu {
+  }
+
+  // .body-footer__social
+  &__social {
+  }
+}
+
+.contacts-footer {
+  // .contacts-footer__item
+  &__item {
+  }
+
+  // .contacts-footer__link
+  &__link {
+    // .contacts-footer__link_mail
+    &_mail {
+    }
+
+    // .contacts-footer__link_location
+    &_location {
+    }
+  }
+}
+
+.menu-footer {
+  // .menu-footer__column
+  &__column {
+  }
+
+  // .menu-footer__title
+  &__title {
+  }
+
+  // .menu-footer__list
+  &__list {
+  }
+
+  // .menu-footer__item
+  &__item {
+  }
+
+  // .menu-footer__link
+  &__link {
+  }
+}
+
+.social-footer {
+  // .social-footer__title
+  &__title {
+  }
+
+  // .social-footer__items
+  &__items {
+  }
+
+  // .social-footer__item
+  &__item {
+  }
 }
