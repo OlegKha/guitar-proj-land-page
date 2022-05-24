@@ -634,7 +634,7 @@ li {
 
   // .customers__swiper
   &__swiper {
-
+    margin: 0 0 50px 0;
   }
 }
 
@@ -787,6 +787,74 @@ li {
   padding: 0 12px 0 0;
 }
 
+
+/*Favorite guitars section*/
+
+.page {
+  // .page__favorite
+  &__favorite {
+    margin: 0 0 120px 0;
+  }
+}
+
+.favorite {
+  // .favorite__container
+  &__container {
+    display: flex;
+    align-items: center;
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+    }
+  }
+
+  // .favorite__body
+  &__body {
+    flex: 0 1 50%;
+
+  }
+
+  // .favorite__title
+  &__title {
+    text-align: left;
+    font-size: 47px;
+    @media (max-width: 991.98px) {
+      font-size: 38px;
+    }
+  }
+
+  &__title:not(:last-child) {
+    margin: 0 0 60px 0;
+  }
+
+  // .favorite__links
+  &__links {
+    display: flex;
+    column-gap: 26px;
+    @media (max-width: 991.98px) {
+      justify-content: center;
+    }
+  }
+
+  // .favorite__image
+  &__image {
+    flex: 0 1 50%;
+    text-align: center;
+  }
+
+  // .favorite__img
+  &__img {
+    max-width: 100%;
+  }
+}
+
+.title {
+}
+
+.links-favorite {
+  // .links-favorite__item
+  &__item {
+  }
+}
 
 
 /*Footer section*/
