@@ -873,17 +873,29 @@ li {
 
   // .footer__copy
   &__copy {
+    padding: 78px 0 43px 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 160%;
+    color: rgba(18, 18, 18, 0.6);
   }
 }
 
 .body-footer {
+  padding: 82px 0 0 0;
   // .body-footer__column
   &__column {
     flex: 0 1 33.333%;
   }
+  &__column:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }
 
   // .body-footer__logo
   &__logo {
+    display: inline-block;
+    margin: 0 0 28px 0;
   }
 
   // .body-footer__contacts
@@ -903,26 +915,42 @@ li {
   // .contacts-footer__item
   &__item {
   }
+  &__item:not(:last-child) {
+    margin:  0 0 20px 0;
+  }
 
   // .contacts-footer__link
   &__link {
+    display: inline-block;
+    line-height: 24px;
+    padding: 0 0 0 44px;
+    color: #666666;
     // .contacts-footer__link_mail
     &_mail {
+      background: url("../images/content/footer/mail.svg") left no-repeat;
     }
 
     // .contacts-footer__link_location
     &_location {
+      background: url("../images/content/footer/location.svg") left no-repeat;
     }
   }
 }
 
 .menu-footer {
+  display: flex;
+  justify-content: space-between;
   // .menu-footer__column
   &__column {
   }
 
   // .menu-footer__title
   &__title {
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #121212;
+    margin: 0 0 28px 0;
   }
 
   // .menu-footer__list
@@ -932,19 +960,35 @@ li {
   // .menu-footer__item
   &__item {
   }
-
+  &__item:not(:last-child) {
+    margin:  0 0 20px 0;
+  }
   // .menu-footer__link
   &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(18, 18, 18, 0.6);
+  }
+  &__link:not(:last-child) {
+    gap: 20px;
   }
 }
 
 .social-footer {
   // .social-footer__title
   &__title {
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #121212;
+    margin: 0 0 28px 0;
   }
 
   // .social-footer__items
   &__items {
+    display: flex;
+    column-gap: 32px;
   }
 
   // .social-footer__item
